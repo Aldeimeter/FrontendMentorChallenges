@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --yellow: hsl(47, 88%, 63%);
+        --white: hsl(0, 0%, 100%);
+        --gray-500: hsl(0, 0%, 42%);
+        --gray-950: hsl(0, 0%, 7%);
+      }
+      body {
+        font-family: "Figtree", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        background: var(--yellow);
+        color: var(--gray-950);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .blog-card {
+        margin: 0 auto;
+        padding: 20px;
+        background: var(--white);
+        border: 1px solid var(--gray-950);
+        box-shadow: 10px 10px 0px 0px var(--gray-950);
+        border-radius: 20px;
+        max-width: 350px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+      }
+      .illustration {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .tag-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      .tag {
+        background: var(--yellow);
+        font-weight: 800;
+        padding: 4px;
+        border-radius: 5px;
+      }
+      .tag:hover {
+        cursor: pointer;
+        color: var(--yellow);
+        background: var(--gray-950);
+      }
+      .title:hover {
+        color: var(--yellow);
+        cursor: pointer;
+      }
+      .author:hover {
+        color: var(--yellow);
+        cursor: pointer;
+      }
+      .title:focus {
+        color: var(--yellow);
+      }
+      .description {
+        color: var(--gray-500);
+        font-size: 14px;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+      }
+      .author .avatar {
+        width: 30px;
+        height: auto;
+      }
+      .attribution {
+        margin-top: 50px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="blog-card">
+        <img
+          class="illustration"
+          src="assets/images/illustration-article.svg"
+          alt="Some abstruct forms"
+        />
+        <ul class="tag-list">
+          <li class="tag">Learning</li>
+        </ul>
+        <p class="published">Published 21 Dec 2023</p>
+        <h2 tabindex="0" class="title">HTML &amp CSS foundations</h2>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="author">
+          <img
+            class="avatar"
+            src="assets/images/image-avatar.webp"
+            alt="Author avatar picture"
+          />
+          <span>Greg Hooper</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Zaitsev Artem</a>.
+    </footer>
+  </body>
+</html>
+
